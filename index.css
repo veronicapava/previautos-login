@@ -8,12 +8,10 @@ body {
   padding: 0;
   background: linear-gradient(
     to right,
-    #ffb020 0%,
-    #ffb020 70%,
-    #ffd24d 0%,
-    #ffd24d 35%,
-    white 30%,
-    white 100%
+    #ffd24d,
+    #ffb020 50%,
+    #ffb020 75%,
+    white 75%
   );
   position: relative;
 
@@ -23,7 +21,10 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+.responsive-box {
+  text-align: center;
+  background-color: rgb(230, 219, 219);
+}
 .form-box {
   width: 300px;
   height: 300px;
@@ -66,20 +67,7 @@ a {
   body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(
-      #ffb020 0%,
-      #ffb020 70%,
-      #ffd24d 70%,
-      #ffd24d 0%,
-      white 30%,
-      white 100%
-    );
-
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; */
+    background: linear-gradient(#ffd24d, #ffb020 50%, #ffb020 75%, white 75%);
   }
   .img-responsive {
     display: flex;
@@ -94,9 +82,8 @@ a {
 
   .form-box {
     width: 265px;
-    height: 250px;
     padding: 80px 45px;
-    background-color: rgb(235, 205, 205);
+    background-color: rgb(122, 51, 51);
     text-align: center;
     border-radius: 10px;
     font-size: 15px;
