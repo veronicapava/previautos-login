@@ -142,7 +142,7 @@ p {
   }
   .form-title-mobile {
     display: inline-block;
-    margin-top: 1%;
+    margin-top: 10%;
     font-size: 20px;
   }
 
@@ -185,8 +185,8 @@ p {
   .other {
     position: fixed;
     width: 105%;
-    top: 75%;
-    height: 25%;
+    top: 70%;
+    height: 30%;
     text-align: center;
     background-color: white;
     z-index: -1;
@@ -195,7 +195,7 @@ p {
   .p-form-mobile {
     position: relative;
     display: inline-block;
-    top: 50%;
+    top: 65%;
   }
 
   a {
