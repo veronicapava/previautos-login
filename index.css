@@ -5,10 +5,12 @@ html {
 }
 
 :root {
-  --yellow-light: blue;
-  --yellow-dark: red;
-  /* --yellow-dark: #ffb020;
-  --yellow-light: #ffd24d; */
+  /* --yellow-light: blue;
+  --yellow-dark: red; */
+  --yellow-dark: #ffb020;
+  --yellow-light: #ffd24d;
+  --icon-email: url("https://cdn-icons.flaticon.com/png/512/2723/premium/2723712.png?token=exp=1636656591~hmac=8d86ef1d68c30221d1a81914de9d5eb5");
+  --icon-password: url("https://cdn-icons-png.flaticon.com/512/3596/3596115.png");
 }
 
 body {
@@ -88,9 +90,11 @@ body {
   background: none;
   border: 1px solid gray;
   display: block;
-  padding: 2% 2%;
+  height: 15%;
+  width: 75%;
+  /* padding: 2% 2%; */
   padding-left: 15%;
-  background-image: url("https://cdn-icons.flaticon.com/png/512/2723/premium/2723712.png?token=exp=1636656591~hmac=8d86ef1d68c30221d1a81914de9d5eb5");
+  background-image: var(--icon-email);
   background-size: 20px 20px;
   background-repeat: no-repeat;
   background-position: 3% 50%;
@@ -102,9 +106,11 @@ body {
   border: 1px solid gray;
   display: block;
   margin: 3% 3%;
-  padding: 2% 2%;
+  height: 15%;
+  width: 75%;
+  /* padding: 2% 2%; */
   padding-left: 15%;
-  background-image: url("https://cdn-icons-png.flaticon.com/512/3596/3596115.png");
+  background-image: var(--icon-password);
   background-size: 18px 18px;
   background-repeat: no-repeat;
   background-position: 3% 50%;
@@ -115,7 +121,9 @@ body {
   border: 1px solid gray;
   background: linear-gradient(to left, #ffb020, #ffd24d);
   font-weight: bold;
-  padding: 2% 20%;
+  /* padding: 2% 20%; */
+  height: 17%;
+  width: 92%;
 }
 
 a {
@@ -150,10 +158,6 @@ p {
     font-size: 20px;
   }
 
-  .form-title {
-    display: none;
-  }
-
   .inner-container {
     display: flex;
     position: absolute;
@@ -174,64 +178,18 @@ p {
     width: 90%;
   }
   .responsive-box {
-    background-color: #ffffff;
     height: 50%;
     width: 90%;
-    border: 1px solid #c0c0c0;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    /* flex-wrap: wrap; */
-    text-align: center;
-    align-items: center;
     margin-left: 5%;
     margin-right: 5%;
   }
 
   .form-box {
-    background-color: white;
-    text-align: center;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
   }
 
-  .form-box input[type="email"] {
-    margin-top: 90px;
-    border-radius: 10px;
-    background: none;
-    border: 1px solid gray;
-    display: block;
-    padding: 10px 100px;
-    padding-left: 10%;
-
-    background-image: url("https://cdn-icons.flaticon.com/png/512/2723/premium/2723712.png?token=exp=1636656591~hmac=8d86ef1d68c30221d1a81914de9d5eb5");
-    background-size: 20px 20px;
-    background-repeat: no-repeat;
-    background-position: 3% 50%;
-  }
-
-  .form-box input[type="password"] {
-    border-radius: 10px;
-    background: none;
-    border: 1px solid gray;
-    display: block;
-    padding: 10px 88px;
-    padding-left: 15%;
-    background-image: url("https://cdn-icons-png.flaticon.com/512/3596/3596115.png");
-    background-size: 18px 18px;
-    background-repeat: no-repeat;
-    background-position: 3% 50%;
-  }
-
-  .form-box button[type="submit"] {
-    border-radius: 10px;
-    border: 1px solid gray;
-    background: linear-gradient(to left, #ffb020, #ffd24d);
-    font-weight: bold;
-    padding: 3px 125px;
+  .form-title {
+    display: none;
   }
 
   .p-form {
@@ -240,13 +198,13 @@ p {
 
   .other {
     position: fixed;
-    width: 100%;
+    width: 105%;
 
     top: 75%;
     height: 25%;
 
     text-align: center;
-    background-color: green;
+    background-color: white;
     /* margin-left: -40px; */
     /* margin-right: -40px; */
     z-index: -1;
@@ -256,10 +214,9 @@ p {
     position: relative;
     display: inline-block;
     top: 50%;
-    /* right: 80%; */
   }
   a {
-    margin-top: auto;
+    margin-top: 10%;
     font-size: 16px;
     color: #ffd24d;
     text-decoration: none;
