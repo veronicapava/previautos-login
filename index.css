@@ -1,12 +1,10 @@
 body,
 html {
   height: 100%;
-  /* font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 :root {
-  /* --yellow-light: blue;
-  --yellow-dark: red; */
   --yellow-dark: #ffb020;
   --yellow-light: #ffd24d;
   --icon-email: url("https://cdn-icons.flaticon.com/png/512/2723/premium/2723712.png?token=exp=1636656591~hmac=8d86ef1d68c30221d1a81914de9d5eb5");
@@ -14,6 +12,7 @@ html {
 }
 
 body {
+  color: #051226;
   margin: 0;
   padding: 0;
 
@@ -28,14 +27,9 @@ body {
 .inner-container {
   display: flex;
   position: absolute;
-  /* flex-direction: column; */
-  /* flex-wrap: wrap; */
-  /* justify-content: center; */
   align-items: center;
-
   height: 60%;
   top: 15%;
-
   width: 85%;
   left: 10%;
   right: 5%;
@@ -53,7 +47,6 @@ body {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
   text-align: center;
   align-items: center;
   margin-left: 10%;
@@ -64,8 +57,6 @@ body {
   margin-top: 10%;
   margin-bottom: 5%;
   font-size: 18px;
-  /* height: 80%;
-  width: 80%; */
 }
 
 .form-title-mobile {
@@ -92,7 +83,6 @@ body {
   display: block;
   height: 15%;
   width: 75%;
-  /* padding: 2% 2%; */
   padding-left: 15%;
   background-image: var(--icon-email);
   background-size: 20px 20px;
@@ -108,7 +98,6 @@ body {
   margin: 3% 3%;
   height: 15%;
   width: 75%;
-  /* padding: 2% 2%; */
   padding-left: 15%;
   background-image: var(--icon-password);
   background-size: 18px 18px;
@@ -121,7 +110,6 @@ body {
   border: 1px solid gray;
   background: linear-gradient(to left, #ffb020, #ffd24d);
   font-weight: bold;
-  /* padding: 2% 20%; */
   height: 17%;
   width: 92%;
 }
@@ -129,7 +117,7 @@ body {
 a {
   margin-top: 10px;
   font-size: 14px;
-  color: #ffd24d;
+  color: var(--yellow-dark);
   text-decoration: none;
 }
 
@@ -165,11 +153,9 @@ p {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
     left: 0%;
     right: 0%;
     top: 10%;
-
     height: 70%;
     width: 99%;
   }
@@ -199,14 +185,10 @@ p {
   .other {
     position: fixed;
     width: 105%;
-
     top: 75%;
     height: 25%;
-
     text-align: center;
     background-color: white;
-    /* margin-left: -40px; */
-    /* margin-right: -40px; */
     z-index: -1;
   }
 
@@ -215,10 +197,8 @@ p {
     display: inline-block;
     top: 50%;
   }
+
   a {
-    margin-top: 10%;
     font-size: 16px;
-    color: #ffd24d;
-    text-decoration: none;
   }
 }
